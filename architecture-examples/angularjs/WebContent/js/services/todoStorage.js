@@ -9,7 +9,7 @@ todomvc.factory('todoStorage', function () {
 
 	return {
 		get: function () {
-			return JSON.parse(localStorage.getItem(STORAGE_ID) || '[]');
+			return JSON.parse(localStorage.getItem(STORAGE_ID) || '[ {"title":"Get some sleep", "completed":false } ]');
 		},
 
 		put: function (todos) {
